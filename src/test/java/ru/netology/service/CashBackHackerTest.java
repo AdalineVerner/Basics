@@ -1,37 +1,36 @@
 package ru.netology.service;
 
-import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
-
-import static org.testng.Assert.*;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class CashBackHackerTest {
 
     @Test
 
-    public void shouldCountRemainderIfAmountHigherBoundary() {
+    public void shouldCountRemainderIfAmountHigherBoundary(){
+
         CashBackHacker service = new CashBackHacker();
 
-        int amount = 10777;
+        int amount = 7985;
 
-        int expected = 223;
+        int expected = 15;
         int actual = service.remain(amount);
 
-        assertEquals(actual, expected);
-
+        Assert.assertEquals(expected, actual);
     }
 
     @Test
 
-    public void shouldCountRemainderIfAmountLowerBoundary() {
+    public void shouldCountRemainderIfAmountLowerBoundary(){
+
         CashBackHacker service = new CashBackHacker();
 
-        int amount = 495;
+        int amount = 690;
 
-        int expected = 505;
+        int expected = 310;
         int actual = service.remain(amount);
 
-        assertEquals(actual, expected);
+        Assert.assertEquals(expected, actual);
 
     }
 
@@ -45,7 +44,9 @@ public class CashBackHackerTest {
         int expected = 0;
         int actual = service.remain(amount);
 
-        assertEquals(actual, expected);
+        Assert.assertEquals(expected, actual);
     }
-
 }
+
+
+
