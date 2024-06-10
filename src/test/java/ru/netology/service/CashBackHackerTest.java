@@ -7,7 +7,7 @@ public class CashBackHackerTest {
 
     @Test
 
-    public void shouldCountRemainderIfAmountHigherBoundary(){
+    public void shouldCountRemainderIfAmountHigherBoundary() {
 
         CashBackHacker service = new CashBackHacker();
 
@@ -21,7 +21,7 @@ public class CashBackHackerTest {
 
     @Test
 
-    public void shouldCountRemainderIfAmountLowerBoundary(){
+    public void shouldCountRemainderIfAmountLowerBoundary() {
 
         CashBackHacker service = new CashBackHacker();
 
